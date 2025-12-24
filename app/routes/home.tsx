@@ -1,13 +1,13 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { ImageManager } from "../components/ImageManager";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "GitHub Images Manager" },
+    { name: "description", content: "Upload and manage images in your GitHub repository" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <ImageManager />;
 }
